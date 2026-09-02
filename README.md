@@ -10,47 +10,69 @@
 
 ---
 
-## 🚀 Características Principales
+## 📸 Vistas de la Aplicación
 
-### 🎡 1. Rueda Armónica Interactiva (SVG Vectorial)
-- **Tonalidades Mayores y Menores Relativas**: Navegación intuitiva en 360° con armaduras de clave exactas (# y ♭) y nombres enarmónicos.
-- **Grados Diatónicos en Tiempo Real**: Resaltado automático de la **Tónica (I / i)**, **Dominante (V)**, **Subdominante (IV)** y acordes diatónicos vecinos (**ii, iii, vi, vii°**).
-- **Hub Táctil Central**: Muestra la tonalidad activa, su relativa y botón táctil para reproducir el acorde de tónica.
-- **Explorador Geométrico de Intervalos y Modos**: Rayos vectoriales y polígonos sobre el círculo para comprender visualmente la tensión del tritono (TT), cuartas justas (P4), quintas justas (P5), terceras y modos diatónicos (Jónico, Dórico, Frigio, Lidio, Mixolidio, etc.).
+### 1. Estudio Armónico y Rueda de Quintas Interactiva
+Visualización en tiempo real de grados armónicos (**I, ii, iii, IV, V, vi, vii°**), tonalidades relativas, notas de la escala y acordes diatónicos clicables con audio polifónico.
 
-### 🎹 2. Motor de Síntesis Polifónico (Web Audio API)
-- Síntesis de sonido en tiempo real sin requerir archivos de audio externos ni conexión a internet.
-- **4 Timbres de Sintetizador**:
-  - 🎹 *Warm Rhodes* (Piano eléctrico aterciopelado con armónicos cálidos).
-  - 🎹 *Piano Acústico* (Sonido percusivo brillante con ataque de macillo).
-  - ✨ *Ambient Pad* (Ataque envolvente y sustain cinematográfico).
-  - 🎸 *Acústico / Pluck* (Punteo limpio y articulado).
-- Control de **BPM (40 a 240)** y **Volumen Maestro**.
-
-### 🎸 3. Visualizadores de Instrumentos Sincronizados
-- **Teclado de Piano Virtual (2 Octavas)**: Resalta las notas de cualquier escala o acorde seleccionado. Totalmente tocable con el ratón.
-- **Diapasón de Guitarra (Fretboard de 12 Trastes)**: 6 cuerdas con afinación estándar (`E-A-D-G-B-E`), marcadores de trastes (3, 5, 7, 9 y 12) y digitaciones clicables con sonido individual.
-
-### 🎶 4. Biblioteca de Progresiones por Estilos Musicales
-Presets emblemáticos listos para escuchar y practicar, transpuestos en tiempo real a la clave seleccionada:
-- **Pop & Éxitos**: Progresión de 4 acordes (`I - V - vi - IV`), Doo-Wop de los 50s (`I - vi - IV - V`), Progresión Sensible (`vi - IV - I - V`).
-- **Jazz & Bossa Nova**: `ii7 - V7 - Imaj7` mayor estándar, `iiø7 - V7 - i` menor, Sustitución Tritonal (`ii7 - ♭II7 - Imaj7`), Bossa Nova (`Imaj7 - II7 - ii7 - V7`).
-- **Blues & Rock**: 12-Bar Blues tradicional (`I7 - IV7 - V7`), Himno de Rock clásico (`I - ♭VII - IV`).
-- **Flamenco & Latino**: Cadencia Andaluza (`i - ♭VII - ♭VI - V`).
-- **Neo-Soul & R&B**: Acordes extendidos (`ii9 - V13 - Imaj9 - vi9`).
-- **Cinematográfico / Épico**: Viaje del Héroe (`I - ♭VI - ♭III - ♭VII`).
-
-### 🎲 5. Generador de Inspiración & Arena de Práctica
-- **Generador de Progresiones**: Crea secuencias de acordes con complejidad armónica configurable (*Diatónica pura*, *Extendida con 7mas y 9nas*, o *Intercambio Modal con acordes prestados*) y permite fijarlas al círculo.
-- **Retos & Quiz de Entrenamiento**: Ejercicios de oído y teoría (relativas menores, quintas/cuartas, alteraciones e intervalos) con contador de puntuación, racha y explicaciones didácticas.
-
-### 🛡️ 6. Arquitectura 100% Offline & Portable (Single-File)
-- Todo el código CSS, HTML y JavaScript está embebido en [index.html](index.html).
-- **Cero dependencias externas**: Sin peticiones a CDNs, sin frameworks pesados, sin fuentes remotas. Funciona en cualquier navegador de escritorio o móvil incluso en modo avión.
+![Estudio Armónico y Rueda de Quintas](docs/screenshots/01_estudio_armonico.png)
 
 ---
 
-## 📂 Estructura del Proyecto
+### 2. Exploración Dinámica por Tonalidades
+Al seleccionar cualquier tonalidad mayor o menor en la rueda, se recalculan automáticamente las armaduras de clave (# y ♭), las notas de la escala y los acordes vecinos.
+
+![Selección de Tonalidad y Grados Diatónicos](docs/screenshots/02_rueda_grados.png)
+
+---
+
+### 3. Geometría de Intervalos y Modos Diatónicos
+Rayos visuales que conectan notas para analizar intervalos clave como el **Tritono (TT)**, **Quintas Justas (P5)**, **Cuartas (P4)** y polígonos de modos (Dórico, Frigio, Lidio, Mixolidio, etc.).
+
+![Explorador Geométrico de Intervalos y Modos](docs/screenshots/03_intervalos_modos.png)
+
+---
+
+### 4. Visualizadores de Instrumentos Sincronizados
+
+#### 🎹 Teclado de Piano Virtual (2 Octavas)
+Muestra en tiempo real las teclas activas de cada acorde o escala. Permite tocar cualquier nota directamente con el ratón.
+
+![Piano Virtual Interactivo](docs/screenshots/04_piano_virtual.png)
+
+#### 🎸 Diapasón de Guitarra (Fretboard de 12 Trastes)
+Mástil de 6 cuerdas con afinación estándar (`E-A-D-G-B-E`), marcadores en trastes 3, 5, 7, 9 y 12, con notas clicables y colores de tónica destacados.
+
+![Diapasón de Guitarra Sincronizado](docs/screenshots/05_guitarra_fretboard.png)
+
+---
+
+### 5. Biblioteca de Progresiones por Estilos Musicales
+Catálogo de fórmulas armónicas famosas (**Pop, Jazz Standard, Blues de 12 compases, Cadencia Andaluza, Bossa Nova, Neo-Soul y Música Épica**), transpuestas en tiempo real a cualquier tonalidad con secuenciador a tempo.
+
+![Biblioteca de Progresiones Famosas](docs/screenshots/06_biblioteca_estilos.png)
+
+---
+
+### 6. Generador de Inspiración y Arena de Retos (Quiz)
+Generador de acordes con complejidad armónica ajustable (diatónica, extendida o intercambio modal) junto a un módulo de entrenamiento auditivo y teórico con puntuación y rachas.
+
+![Generador Aleatorio y Retos Teóricos](docs/screenshots/07_inspiracion_quiz.png)
+
+---
+
+## 🚀 Características Principales
+
+- 🎡 **Círculo de Quintas SVG**: Tonalidades mayores, relativas menores, armaduras de clave (#/♭) y grados armónicos automáticos.
+- 🎹 **Sintetizador Web Audio API**: 4 timbres de sonido (*Warm Rhodes, Piano Acústico, Ambient Pad, Pluck*) con control de BPM y volumen maestro.
+- 🎸 **Instrumentos Duales**: Piano y Diapasón de Guitarra interactivos y sincronizados.
+- 🎶 **Biblioteca de Estilos**: Pop, Jazz, Blues, Flamenco, Neo-Soul y Cine con reproducción rítmica.
+- 🎲 **Inspiración y Retos**: Generador de progresiones aleatorias y quiz de entrenamiento musical.
+- 🛡️ **100% Offline y Portable**: Todo el código CSS, HTML y JS está integrado en [index.html](index.html) sin dependencias externas ni peticiones de red.
+
+---
+
+## 📂 Estructura del Repositorio
 
 ```text
 CirculoDequintas/
@@ -58,7 +80,17 @@ CirculoDequintas/
 ├── index.html                  # Aplicación completa 100% portable y offline
 ├── Circulo_de_Quintas_Demo.mp4 # Video demo en 1080p con locución en castellano
 ├── SGS.mp3                     # Pista de audio de fondo
-├── README.md                   # Documentación principal del repositorio
+├── README.md                   # Documentación principal con capturas
+│
+├── docs/
+│   └── screenshots/            # Capturas de pantalla en alta resolución
+│       ├── 01_estudio_armonico.png
+│       ├── 02_rueda_grados.png
+│       ├── 03_intervalos_modos.png
+│       ├── 04_piano_virtual.png
+│       ├── 05_guitarra_fretboard.png
+│       ├── 06_biblioteca_estilos.png
+│       └── 07_inspiracion_quiz.png
 │
 ├── css/
 │   └── styles.css              # Hoja de estilos Cyber-Acoustic Dark Mode
