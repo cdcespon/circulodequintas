@@ -1,0 +1,7 @@
+# OS metadata
+Thumbs.db
+.DS_Store
+
+# Scratch & temporary artifacts
+scratch/
+*.log
